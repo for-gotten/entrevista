@@ -1,0 +1,81 @@
+# def custom_max (n1: int, n2: int):
+#     if (n2 > n1):
+#         return n2
+#     elif n1>n2:
+#         return n1
+#     elif n1 == n2:
+#         raise Exception("Los valores no pueden ser iguales")
+#     raise Exception("Algo salió mal")
+
+# print(custom_max(3,2))
+
+# def max_de_tres (n1: int, n2: int, n3:int):
+#     if n1 > n2 and n1 > n3:
+#         return n1
+#     elif n2 > n1 and n2 > n3:
+#         return n2
+#     elif n3 > n1 and n3 > n2:
+#         return n3
+# print (max_de_tres (5000,-2,34));
+
+
+# def is_vowel (caracter):
+#     lista_vocales = ['a', 'e', 'i', 'o', 'u', ]
+#     if caracter in lista_vocales:
+#         return True
+#     else: 
+#         return False
+# print(is_vowel('a'))
+
+# def suma(lista):
+#     result = 0
+#     for n in lista:
+#         result = result + (n)
+#     print(result)
+
+# suma([1,2,-1])
+
+# def multiplicacion(lista):
+#     result = lista[0]
+#     i = 1
+#     while i in range(1, len(lista)):
+#         result = result * lista[i]
+#         i +=1
+#         print(result)
+
+# multiplicacion([1,2,1])
+
+# Dar vuelta una cadena
+# def inversa(cadena):
+#     longitud= -(len(cadena)-1)
+#     nueva_cadena = str()
+#     for n in range (longitud, 1):
+#         n = abs(n)
+#         nueva_cadena += cadena[n]
+#     print(nueva_cadena)
+
+# inversa('prueba')
+
+# def es_palindromo(cadena):
+#     nueva_cadena = inversa(cadena)
+#     if nueva_cadena == cadena:
+#         return True
+    
+# print(es_palindromo('arenera'))
+
+
+# def superposicion(lista1, lista2):
+#     for n in lista1:
+#         if n in lista2:
+#             return True
+#     return False
+
+# print(superposicion([1,2,3], [5,7,4]))
+
+def generar_n_caracteres (caracter, n):
+    string = caracter
+    for i in range(1,n):
+        string += caracter
+    print (string)
+
+generar_n_caracteres('abc',2)
